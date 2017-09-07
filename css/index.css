@@ -1,0 +1,256 @@
+html {
+    font-size: 62.5%;
+}
+/*顶部导航*/
+nav {
+    font-size: 1.6rem;
+}
+nav .navbar-brand {
+    margin: 0;
+    padding: 0;
+}
+nav .navbar-brand img {
+    height: 100%;
+}
+/*/顶部导航*/
+/*欢迎*/
+.welcome {
+    position: relative;
+    height: 700px;
+    overflow: hidden;
+    background: url("../images/s1bg.jpg") no-repeat center center;
+    background-size: cover;
+}
+.welcome .welcome-photo {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    top:100px;
+    left: 50%;
+    margin-left:-75px;
+    border-radius: 50%;
+}
+.welcome .welcome-photo:hover {
+    box-shadow: 0 0 10px #FF0000;
+}
+.welcome .welcome-photo img {
+    position: absolute;
+    width: 150px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.welcome .welcome-photo img:nth-child(2) {
+    opacity: 0;
+    transform: scale(0.5,0.5) rotate(0);
+    transition: all 2s;
+}
+.welcome .welcome-photo img:nth-child(2):hover {
+    transform: scale(1,1) rotate(360deg);
+    opacity: 1;
+}
+.welcome .welcome-dec {
+    padding-top: 500px;
+    color: #ffffff;
+    text-align: center;
+    transition: all 1.5s .3s;
+    opacity: 0;
+}
+.welcome .fade {
+    padding-top: 300px;
+    opacity: 1;
+}
+.welcome .welcome-dec .dec-one {
+    font-size: 10rem;
+    margin-bottom: 50px;
+}
+.welcome .welcome-dec .dec-two {
+    font-size: 3rem;
+    margin-bottom: 20px;
+
+}
+.welcome .welcome-dec .dec-three {
+    font-size: 3rem;
+}
+
+.welcome .dec-three span {
+    margin: 0 10px;
+    transition: all 1s ease .5s;
+}
+.welcome .welcome-dec.fade .dec-three span {
+    margin: 0;
+}
+/*/欢迎*/
+/*关于我*/
+.about {
+    height: 700px;
+}
+.about h1 {
+    font-size: 2.5rem;
+    padding: 60px 0 10px 0;
+    text-align: center;
+}
+.about h2 {
+    font-size: 1rem;
+    text-align: center;
+}
+.about .about-dec {
+    padding-top: 100px;
+}
+.about .about-dec .about-dec-all {
+}
+.about .about-dec .about-dec-all h4{
+    font-size: 1.5rem;
+    color: #fff;
+    text-align: left;
+    line-height: 30px;
+    background-color: #428bca;
+    height: 30px;
+    border-radius: 5px;
+    padding: 0 10px;
+}
+.about .about-dec .about-dec-2 h4{
+    background-color: #d9edf7;
+    color: #31708f;
+}
+.about .about-dec .about-dec-3 h4{
+    background-color: #dff0d8;
+    color: #3c763d;
+}
+.about .about-dec .about-dec-4 h4{
+    background-color: #fcf8e3;
+    color: #8a6d3b;
+}
+.about .about-dec .dec-left {
+    float: left;
+    padding:10px 20px;
+    text-align: left;
+    font-size: 1.2rem;
+    line-height: 20px;
+}
+.about .about-dec .dec-right {
+    float: right;
+    padding:10px 20px;
+    text-align: right;
+    font-size: 1.2rem;
+    line-height: 20px;
+}
+.about .about-dec:nth-child(2) {
+    padding-top: 0;
+}
+/*/关于我*/
+/*技能*/
+.skill {
+    height: 700px;
+    overflow: hidden;
+    position: relative;
+}
+.skill h1 {
+    font-size: 2.5rem;
+    padding: 60px 0 10px 0;
+    text-align: center;
+}
+.skill h2 {
+    font-size: 1rem;
+    text-align: center;
+}
+.skill .skill-text {
+    position: absolute;
+    top: 150px;
+    left:700px;
+    color: #fff;
+    font-size: 1.5rem;
+    width: 500px;
+    height: 400px;
+    background-color: #adadad;
+    border-radius: 10px;
+    padding-top: 60px;
+}
+.skill .skill-text p {
+    text-align: center;
+    margin: 20px 0;
+}
+/*/技能*/
+/*demo*/
+.demo {
+    height: 700px;
+    background-color: yellow;
+}
+/*/demo*/
+/*联系我*/
+.contact {
+    height: 700px;
+    background-color: purple;
+}
+/*/联系我*/
+/*媒体查询*/
+@media (max-width: 1200px) {
+    .welcome .welcome-dec .dec-one {
+        font-size: 9rem;
+    }
+    .welcome .welcome-dec .dec-two {
+        font-size: 2.7rem;
+
+    }
+    .welcome .welcome-dec .dec-three {
+        font-size: 2.7rem;
+    }
+    .welcome .welcome-photo {
+        width: 130px;
+        height: 130px;
+        margin-left:-65px;
+    }
+    .welcome .welcome-photo img {
+        width: 130px;
+    }
+    .skill .skill-text {
+        left: 600px;
+    }
+}
+@media (max-width: 992px) {
+    .welcome .welcome-dec .dec-one {
+        font-size: 6rem;
+    }
+    .welcome .welcome-dec .dec-two {
+        font-size: 1.8rem;
+
+    }
+    .welcome .welcome-dec .dec-three {
+        font-size: 1.8rem;
+    }
+    .welcome .welcome-photo {
+        width: 110px;
+        height: 110px;
+        margin-left:-55px;
+    }
+    .welcome .welcome-photo img {
+        width: 110px;
+    }
+    .skill .skill-text {
+        left: 450px;
+    }
+}
+@media (max-width: 768px) {
+    .welcome .welcome-dec .dec-one {
+        font-size: 4rem;
+    }
+    .welcome .welcome-dec .dec-two {
+        font-size: 1.2rem;
+
+    }
+    .welcome .welcome-dec .dec-three {
+        font-size: 1.2rem;
+    }
+    .welcome .welcome-photo {
+        width: 90px;
+        height: 90px;
+        margin-left:-45px;
+    }
+    .welcome .welcome-photo img {
+        width: 90px;
+    }
+    .skill .skill-text {
+        display: none;
+    }
+}
+/*/媒体查询*/
