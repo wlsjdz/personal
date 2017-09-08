@@ -173,14 +173,136 @@ nav .navbar-brand img {
 /*/技能*/
 /*demo*/
 .demo {
-    height: 700px;
-    background-color: yellow;
+    
+}
+.demo h1 {
+    font-size: 2.5rem;
+    padding: 60px 0 10px 0;
+    text-align: center;
+}
+.demo h2 {
+    font-size: 1rem;
+    text-align: center;
+}
+.demo .demo-dec {
+
+}
+.demo .demo-dec img {
+    width: 100%;
+    transition: all 1s;
+}
+.demo .demo-dec .demo-cover {
+    position: absolute;
+    top: 0;
+    left: 4%;
+    width: 92.5%;
+    height: 100%;
+    background-color: #333333;
+    transition: all .8s;
+    opacity:0;
+}
+.demo .demo-dec .demo-dec-all{
+    margin-top:20px;
+    position: relative;
+}
+.demo .demo-dec .demo-dec-all:last-child{
+    margin-bottom:30px;
+}
+.demo .demo-dec .demo-float{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top:-30px;
+    margin-left:-75px;
+    width: 150px;
+    height: 100px;
+    color: #ededed;
+    font-size: 1.6rem;
+    text-align: center;
+    line-height: 20px;
+    display: none;
+}
+.demo .demo-dec-all:hover img {
+    transform: scale(1.05);
+}
+.demo .demo-dec-all:hover .demo-cover {
+    opacity:.7;
+    transform: scale(1.05);
+    box-shadow: 3px 3px 3px #929292;
+}
+.demo .demo-dec-all:hover .demo-float {
+    display: block;
 }
 /*/demo*/
 /*联系我*/
 .contact {
-    height: 700px;
-    background-color: purple;
+    position: relative;
+}
+.contact h1 {
+    font-size: 2.5rem;
+    padding: 60px 0 10px 0;
+    text-align: center;
+}
+.contact h2 {
+    font-size: 1rem;
+    text-align: center;
+}
+.contact .contact-dec {
+    padding-top: 80px;
+    text-align: center;
+    font-size: 1.8rem;
+}
+.contact .contact-dec p {
+    margin-bottom: 20px;
+}.contact .contact-dec p span {
+     margin: 0 15px;
+ }
+.contact .contact-dec p span:nth-child(1){
+    color: #ff52c1;
+}
+.contact .contact-dec p span:nth-child(2){
+    color: #fff85a;
+}
+.contact .contact-dec p span:nth-child(3){
+    color: #3fffc2;
+}
+.contact .contact-dec p span:nth-child(4){
+    color: #94b337;
+}
+.contact .contact-dec p:nth-child(1) {
+    font-size: 2.4rem;
+    margin-bottom: 40px;
+}
+.contact .contact-icon {
+    text-align: center;
+    padding-top: 20px;
+    width: 360px;
+    position: absolute;
+    left: 50%;
+    margin-left:-180px;
+}
+.contact .contact-icon a {
+    display: block;
+    width: 40px;
+    height: 40px;
+    background-color: #aeaeae;
+    float: left;
+    margin-right: 20px;
+    border-radius: 50%;
+    padding-top: 10px;
+}
+.contact .contact-icon img {
+    width: 20px;
+}
+.footer {
+    margin-top:115px;
+    height: 80px;
+    color: #333333;
+    text-align: center;
+    line-height: 20px;
+    font-size: 1.2rem;
+    padding: 10px 0;
+    border-top: 1px solid #adadad;
 }
 /*/联系我*/
 /*媒体查询*/
@@ -206,6 +328,9 @@ nav .navbar-brand img {
     .skill .skill-text {
         left: 600px;
     }
+    .demo .demo-dec .demo-float {
+        font-size: 1.4rem;
+    }
 }
 @media (max-width: 992px) {
     .welcome .welcome-dec .dec-one {
@@ -229,6 +354,9 @@ nav .navbar-brand img {
     .skill .skill-text {
         left: 450px;
     }
+    .demo .demo-dec .demo-float {
+        font-size: 1.2rem;
+    }
 }
 @media (max-width: 768px) {
     .welcome .welcome-dec .dec-one {
@@ -251,6 +379,9 @@ nav .navbar-brand img {
     }
     .skill .skill-text {
         display: none;
+    }
+    .demo .demo-dec .demo-float {
+        font-size: 1rem;
     }
 }
 /*/媒体查询*/

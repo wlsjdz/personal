@@ -48,7 +48,7 @@ CircleText.prototype = {
 			align: 'center',
 			fontFamily: '微软雅黑',
 			fontStyle: 'normal',
-			fontSize: 10,
+			fontSize: 8,
 			fill: '#fff'
 		});
 		this.circleGroup.add( text );

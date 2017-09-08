@@ -1,4 +1,6 @@
 $(function () {
+    console.log('Hi! 朋友，感谢您调试我的简历代码。\n' +
+        '希望我们能互相学习，共同进步^_^ ');
     $(".welcome-dec").addClass("fade");
 
     // 点击导航
