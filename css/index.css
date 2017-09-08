@@ -124,6 +124,7 @@ nav .navbar-brand img {
 .about .about-dec .dec-left {
     float: left;
     padding:10px 20px;
+    padding-right: 0;
     text-align: left;
     font-size: 1.2rem;
     line-height: 20px;
@@ -282,7 +283,6 @@ nav .navbar-brand img {
     margin-left:-180px;
 }
 .contact .contact-icon a {
-    display: block;
     width: 40px;
     height: 40px;
     background-color: #aeaeae;
@@ -290,10 +290,38 @@ nav .navbar-brand img {
     margin-right: 20px;
     border-radius: 50%;
     padding-top: 10px;
+    position: relative;
 }
-.contact .contact-icon img {
+.contact .contact-icon a img:nth-child(1) {
     width: 20px;
 }
+.contact .contact-icon a img:nth-child(2) {
+    width: 120px;
+    position: absolute;
+    top: -150px;
+    left: -40px;
+    border: 2px solid #75959f;
+    border-radius: 10px;
+    display: none;
+}
+.contact .contact-icon a img.weixin {
+    top: -138px;
+}
+.contact .contact-icon a span {
+    position: absolute;
+    border: 10px solid red;
+    border-color: transparent;
+    border-top-color: #75959f;
+    top:-18px;
+    left: 11px;
+    z-index: 2;
+    display: none;
+}
+.contact .contact-icon a:hover img:nth-child(2),
+.contact .contact-icon a:hover span {
+    display: block;
+}
+
 .footer {
     margin-top:115px;
     height: 80px;
