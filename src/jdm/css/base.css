@@ -1,0 +1,49 @@
+/*
+* @Author: 吴腾鹏
+* @Date:   2017-07-29 10:30:55
+* @Last Modified by:   吴腾鹏
+* @Last Modified time: 2017-07-29 11:17:49
+*/
+*,
+::before,
+::after {
+	margin: 0;
+	padding: 0;
+
+	-webkit-top-highlight-color: transparent;
+	-webkit-box-sizing:  border-box;
+
+}
+body {
+	font-size: 14px;
+	font-family: "Microsoft YaHei",sans-serif;
+	color: #000;	
+}
+a {
+	text-decoration: none;
+	color: #000;
+}
+ul {
+	list-style: none;
+}
+input,textarea {
+	border: none;
+	resize: none;
+	outline: none;
+	-weibkit-appearance: none;
+
+}
+/* 清除浮动 */
+.clearfix::before,
+.clearfix::after {
+	content: ".";
+	display: block;
+	height: 0;
+	line-height: 0;
+	visibility: hidden;
+	clear: both;
+}
+[class^="icon_"] {
+	background: url('../images/sprites.png') no-repeat;
+	background-size: 200px 200px;
+}

@@ -1,0 +1,161 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+.w {
+	width: 982px;
+	margin: 0 auto;
+}
+.clearfix:after {
+	content: '''';
+	visibility: hidden;
+	display: block;
+	height: 0;
+	clear: both;
+}
+.clearfix {
+	zoom: 1;
+}
+a {
+	text-decoration: none;
+}
+/*header开始*/
+.header {
+	height: 40px;
+	background-color: #444444;
+}
+.header .w {
+	text-align: right;
+	color: #a8a8aa;
+	font: 10px/40px "microsoft yahei";
+}
+/*header 结束*/
+
+/*nav开始*/
+.nav {
+	height: 44px;
+	background-color: #290a0d;
+}
+.nav ul {
+	list-style: none;
+}
+.nav li {
+	margin-right: 90px;
+	float: left;
+	font-size: 12px;
+	font: 12px/44px "sinsum";
+}
+.nav li.apple {
+	position: relative;
+	top: 5px;
+	left: 0;
+}
+.nav li.search {
+	position: relative;
+	top: 4px;
+	left: 0;
+}
+.nav li.battery {
+	margin-right: 0px;
+	position: relative;
+	top: 3px;
+	left: 0;
+}
+.nav li a {
+	color: #faf7f7;
+}
+.nav li a:hover {
+	color: #c7c5c5;
+}
+/*nav结束*/
+
+/*banner开始*/
+.banner {
+	height: 646px;
+	background: #cc3341 url(../images/banner.jpg) no-repeat center top;
+}
+/*banner结束*/
+
+/*product开始*/
+.product {
+	overflow: hidden;
+}
+.product ul {
+	list-style: none;
+	width: 2000px;
+}
+.product li {
+	width: 353px;
+	height: 200px;
+	float: left;
+	border: 1px solid #ffffff;
+}
+/*product结束*/
+
+/*footer开始*/
+.introduce {
+	line-height: 48px;
+	font: 10px/48px "microsoft yahei";
+}
+.links {
+	border-top: 1px solid #d6d6d6;
+	border-bottom: 1px solid #d6d6d6;
+	padding-top: 21px;
+
+}
+.links dl {
+	float: left;
+	width: 194px;
+	font-size: 10px;
+	font-family: "sinsum";
+}
+.links dt {
+	font-weight: 700;
+}
+.links dd {
+	margin-top: 10px;
+}
+.links .dt {
+	margin-top: 30px;
+}
+.call {
+	padding: 40px 0 10px 0;
+	font-size: 10px;
+}
+.call a {
+	color: #0070c9;
+}
+.copyright {
+	height: 50px;
+}
+.left {
+	float: left;
+	line-height: 25px;
+	font-size: 10px;
+	color: #888888;
+}
+.middle {
+	float: left;
+	font-size: 10px;
+	padding-top: 12px;
+	color: #888888;
+}
+.middle a {
+	margin: 0 13px;
+	color: #555555;
+}
+.middle a.first {
+	margin: 0;
+}
+.right {
+	float: right;
+	font-size: 10px;
+	padding-top: 12px;
+	color: #555555;
+}
+.right img {
+	position: relative;
+	top: 4px;
+	left: 0;
+}
+/*footer结束*/
